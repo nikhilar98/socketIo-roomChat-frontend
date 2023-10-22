@@ -37,15 +37,13 @@ function App() {
   socket.on('receive-message',(data)=>{
         setReceivedMsgs([...receivedMsgs,data])
   })
-  
-  console.log(socket.id)
 
   return (
     <div>
         <fieldset style={{width:"400px",marginTop:"70px"}}>
           <h1>Messages</h1> 
           <input type="text" value={room} onChange={(e)=>{setRoom(e.target.value)}}/>
-          <button onClick={joinRoom}>join room</button> <button onClick={leaveRoom}>leave room</button>
+          <button onClick={joinRoom} className="joinroom">join room</button> <button onClick={leaveRoom} className="leaveroom">leave room</button>
           <hr />
           <ul style={{listStyle:"none"}}>
             {

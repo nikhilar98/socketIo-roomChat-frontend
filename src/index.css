@@ -17,3 +17,11 @@ input[type='submit']{
     margin-left: 5px;
     padding: 3px;
 }
+.leaveroom{
+    background-color: rgb(150, 17, 17);
+    color:white;
+}
+.joinroom{
+    background-color: rgb(13, 167, 41);
+    color:white;
+}
