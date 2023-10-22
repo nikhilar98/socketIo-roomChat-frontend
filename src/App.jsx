@@ -50,7 +50,7 @@ function App() {
   })
 
   return (
-    <div>
+    <div className="container">
         <fieldset style={{width:"400px",marginTop:"70px"}}>
           <h1>BlazeText
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-1 h-1" width="40px">
