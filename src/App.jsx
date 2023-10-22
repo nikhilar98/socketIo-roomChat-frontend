@@ -1,7 +1,7 @@
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import {io} from 'socket.io-client'
 
-const socket = io.connect('http://localhost:3500')
+const socket = io.connect('https://socketio-roomchat-backend.onrender.com')
 
 function App() {
 
@@ -50,7 +50,7 @@ function App() {
           <ul style={{listStyle:"none"}}>
             {
               receivedMsgs.map((ele,i)=>{
-                return <li key={i} style={socket.id==ele.id ? {textAlign:'right'} : {textAlign:'left'}}><span class='message'>{ele.message}</span><br/><span class='time'>{new Date().toTimeString().slice(0,8)+','+new Date().toLocaleDateString()}</span></li>
+                return <li key={i} style={socket.id===ele.id ? {textAlign:'right'} : {textAlign:'left'}}><span class='message'>{ele.message}</span><br/><span class='time'>{ele.time}</span></li>
               })
             }
           </ul>
