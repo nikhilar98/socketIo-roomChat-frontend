@@ -65,17 +65,17 @@ function App() {
           <Button variant="contained" size="small" onClick={joinRoom} style={{backgroundColor:"green"}}>join</Button>
           <Button variant="contained" size="small" onClick={leaveRoom} style={{backgroundColor:"red",color:"black",marginLeft:"10px"}}>leave</Button>
           <hr />
-          <ul style={{listStyle:"none",padding:'0'}}>
-            {
-              receivedMsgs.map((ele,i)=>{
-                return <li key={i} style={socket.id===ele.id ? {textAlign:'right'} : {textAlign:'left'}}>
-                    <span className='username'>{ele.name}</span><br/>
-                    <span className='message'>{ele.message}</span><br/>
-                    <span className='time'>{ele.time}</span>
-                  </li>
-              })
-            }
-          </ul>
+            <ul style={{listStyle:"none",padding:'0',overflow:'auto',height:"300px"}}>
+              {
+                receivedMsgs.map((ele,i)=>{
+                  return <li key={i} style={socket.id===ele.id ? {textAlign:'right'} : {textAlign:'left'}}>
+                      <span className='username'>{ele.name}</span><br/>
+                      <span className='message'>{ele.message}</span><br/>
+                      <span className='time'>{ele.time}</span>
+                    </li>
+                })
+              }
+            </ul>
           <div className="send-box"> 
             <form onSubmit={sendMessage}>
                 <TextField label="your message goes here..." variant="outlined" type="text" value={message} onChange={(e)=>{setMessage(e.target.value)}} size="small" />
