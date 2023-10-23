@@ -5,7 +5,7 @@
     color: white;
 }
 li{
-    margin: 30px 0px;
+    margin: 10px 0px;
 }
 .username{
     color:rgb(0, 0, 0);
@@ -44,9 +44,39 @@ input[type='submit']{
     justify-content: center;
     align-items: center;
 }
+.count{
+    background-color: rgb(13, 167, 41);
+    color:white;
+    border-radius: 100px;
+    border-style:double;
+}
 body{
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+    margin:0;
+    box-sizing: border-box;
 }
+.container{
+    padding:0;
+    margin:0;
+}
+fieldset{
+ margin: 0;
+ border: none;
+ border-radius: 10px;
+ box-shadow: 5px 15px 15px ;
+}
+ul{
+    list-style:none;
+    padding:0;
+    overflow:auto;
+    height:300px
+}
+ul::-webkit-scrollbar{
+    display: none;
+}
+
+
