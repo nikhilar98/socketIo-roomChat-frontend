@@ -88,8 +88,8 @@ function App() {
               <TextField error={Boolean(formErrors.name)} label={formErrors.name ?"Error":"enter your name"} variant="filled" type="text" value={name} onChange={(e)=>{setName(e.target.value)}} size="small" helperText={formErrors.name && formErrors.name} color="success"/>
           </Box>{ Boolean(members) && <span> Members in room : <button className='count' disabled={true}>{members}</button> </span>}<br/><br/>
           <Button variant="contained" size="small" onClick={joinRoom} style={{backgroundColor:"green"}}>join</Button>
-          <Button variant="contained" size="small" onClick={leaveRoom} style={{backgroundColor:"red",color:"black",marginLeft:"10px"}}>leave</Button>
-          <hr />
+          <Button variant="contained" size="small" onClick={leaveRoom} style={{backgroundColor:"rgb(181, 87, 87)",color:"black",marginLeft:"10px"}}>leave</Button>
+          
             <ul>
               {  
                 receivedMsgs.map((ele,i)=>{

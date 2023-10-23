@@ -1,5 +1,5 @@
 .message{
-    background-color: rgba(18,140,126);
+    background-color: rgb(0, 0, 0);
     padding: 5px;
     border-radius: 10px;
     color: white;
@@ -24,7 +24,7 @@ input[type='submit']{
     border-radius: 4px;
 }
 .leaveroom{
-    background-color: rgb(205, 11, 11);
+    background-color: rgb(181, 87, 87);
     color:white;
     border:none;
     margin-left: 5px;
@@ -58,7 +58,7 @@ body{
     padding: 50px;
     margin:0;
     box-sizing: border-box;
-    background-color: rgb(100, 161, 183);
+    background-color: rgb(0, 0, 0);
 }
 .container{
     padding:0;
@@ -69,7 +69,7 @@ fieldset{
  border: none;
  border-radius: 10px;
  box-shadow: 5px 15px 15px rgba(0,0,0,0.7);
- background-color: rgb(255, 255, 255);
+ background-color:#dfdfdf;
 }
 
 ul{
@@ -77,11 +77,11 @@ ul{
     padding:0;
     overflow:auto;
     height:300px;
-    margin-top:0;
+    background-color: rgb(110, 164, 184);
+    border-radius: 10px;
 }
 ul::-webkit-scrollbar{
     display: none;
 }
-hr{
-    margin-bottom: 0;
-}
+
+
