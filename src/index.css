@@ -58,6 +58,7 @@ body{
     padding: 50px;
     margin:0;
     box-sizing: border-box;
+    background-color: rgb(100, 161, 183);
 }
 .container{
     padding:0;
@@ -67,8 +68,10 @@ fieldset{
  margin: 0;
  border: none;
  border-radius: 10px;
- box-shadow: 5px 15px 15px ;
+ box-shadow: 5px 15px 15px rgba(0,0,0,0.7);
+ background-color: rgb(255, 255, 255);
 }
+
 ul{
     list-style:none;
     padding:0;
@@ -78,5 +81,3 @@ ul{
 ul::-webkit-scrollbar{
     display: none;
 }
-
-

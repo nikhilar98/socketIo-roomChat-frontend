@@ -34,7 +34,6 @@ function App() {
 
   console.log(socket.id)
 
-
   function joinRoom(){
     runValidations() 
     if(Object.keys(errors).length===0){
@@ -105,9 +104,9 @@ function App() {
             </ul>
           <div className="send-box"> 
             <form onSubmit={sendMessage}>
-                <TextField label="your message goes here..." variant="outlined" type="text" value={message} onChange={(e)=>{setMessage(e.target.value)}} size="small" autoComplete="off"/>
+                <TextField label="your message goes here..." variant="filled" type="text" value={message} onChange={(e)=>{setMessage(e.target.value)}} size="small" autoComplete="off"/>
 
-                <Button variant="contained" size="medium" type='submit' disabled={!(enableSend&&room&&name)} style={{marginLeft:"10px"}}>
+                <Button variant="contained" size="medium" type='submit' disabled={!(enableSend&&room&&name)} style={{marginLeft:"10px",boxShadow: "2px 5px 8px rgba(0,0,0,0.8)",marginTop:'2px'}}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                   </svg>
